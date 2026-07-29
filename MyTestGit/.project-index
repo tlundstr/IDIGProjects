@@ -1,0 +1,150 @@
+{
+  "nodes": [
+    {
+      "id": "37947a9f-00a2-4e2e-bc31-8467a6d132a0:0",
+      "projectId": "ehPc66xC",
+      "filePath": "MyTestGit/telemetry-3adnq.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1785326648669,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-3adnq",
+      "namespace": "MyTestGit",
+      "version": "1.0.0",
+      "contentHash": "4a39ae5ae821351b"
+    },
+    {
+      "id": "63103dc4-a1fb-4124-af62-c7ad5b858cf1:0",
+      "projectId": "ehPc66xC",
+      "filePath": "MyTestGit/policy-sequence-3adnq.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1785326649069,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "policy-sequence-3adnq",
+      "namespace": "MyTestGit",
+      "version": "1.0.0",
+      "contentHash": "a3665ef7994c50c3"
+    },
+    {
+      "id": "75367c41-d369-4ffe-b3c3-c70af5cce6bf:0",
+      "projectId": "ehPc66xC",
+      "filePath": "MyTestGit/calc-server-3adnq.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1785326650295,
+      "schemaVersion": 1,
+      "kind": "MCPServer",
+      "name": "calc-server-3adnq",
+      "namespace": "MyTestGit",
+      "version": "1.0.0",
+      "contentHash": "7478055b5033496e"
+    },
+    {
+      "id": "7a656a2c-86a4-4bbd-8cea-e28a88d19ec7:0",
+      "projectId": "ehPc66xC",
+      "filePath": "MyTestGit/quota-3adnq.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1785326649472,
+      "schemaVersion": 1,
+      "kind": "Quota",
+      "name": "quota-3adnq",
+      "namespace": "MyTestGit",
+      "version": "1.0.0",
+      "contentHash": "3e7b9bbdc4bb072a"
+    },
+    {
+      "id": "852b59b2-ab25-4273-9d20-453b03c83813:0",
+      "projectId": "ehPc66xC",
+      "filePath": "MyTestGit/calc-tool-3adnq.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1785326649868,
+      "schemaVersion": 1,
+      "kind": "MCPTools",
+      "name": "calc-tool-3adnq",
+      "namespace": "MyTestGit",
+      "version": "1.0.0",
+      "contentHash": "984c3d6e81a4d032"
+    },
+    {
+      "id": "b117b7a7-7da2-4211-83cd-2a4e9eeec0c3:0",
+      "projectId": "ehPc66xC",
+      "filePath": "MyTestGit/mcp-invoke-3adnq.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1785326647759,
+      "schemaVersion": 1,
+      "kind": "MCPInvoke",
+      "name": "mcp-invoke-3adnq",
+      "namespace": "MyTestGit",
+      "version": "1.0.0",
+      "contentHash": "313183fcaefdbc87"
+    }
+  ],
+  "edges": [
+    {
+      "id": "3e06b857-9ddf-492d-8708-9164aa676324",
+      "projectId": "ehPc66xC",
+      "sourceNodeId": "63103dc4-a1fb-4124-af62-c7ad5b858cf1:0",
+      "targetNodeId": "37947a9f-00a2-4e2e-bc31-8467a6d132a0:0",
+      "targetRefType": "same-project",
+      "targetRefString": "MyTestGit:telemetry-3adnq:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1785326649071,
+      "lastValidated": 1785326649071
+    },
+    {
+      "id": "5d53f3f9-1e0d-4b32-a26c-cb3834a16430",
+      "projectId": "ehPc66xC",
+      "sourceNodeId": "75367c41-d369-4ffe-b3c3-c70af5cce6bf:0",
+      "targetNodeId": "852b59b2-ab25-4273-9d20-453b03c83813:0",
+      "targetRefType": "same-project",
+      "targetRefString": "MyTestGit:calc-tool-3adnq:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1785326650297,
+      "lastValidated": 1785326650297
+    },
+    {
+      "id": "aa88953d-8634-4c64-b04f-550f4165ed46",
+      "projectId": "ehPc66xC",
+      "sourceNodeId": "75367c41-d369-4ffe-b3c3-c70af5cce6bf:0",
+      "targetNodeId": "7a656a2c-86a4-4bbd-8cea-e28a88d19ec7:0",
+      "targetRefType": "same-project",
+      "targetRefString": "MyTestGit:quota-3adnq:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1785326650297,
+      "lastValidated": 1785326650297
+    },
+    {
+      "id": "fab86dbf-3937-4ff7-ab3f-bad19e0dd583",
+      "projectId": "ehPc66xC",
+      "sourceNodeId": "75367c41-d369-4ffe-b3c3-c70af5cce6bf:0",
+      "targetNodeId": "63103dc4-a1fb-4124-af62-c7ad5b858cf1:0",
+      "targetRefType": "same-project",
+      "targetRefString": "MyTestGit:policy-sequence-3adnq:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1785326650297,
+      "lastValidated": 1785326650297
+    },
+    {
+      "id": "fd38ea42-d171-4dc0-bfac-be7f8030b68e",
+      "projectId": "ehPc66xC",
+      "sourceNodeId": "63103dc4-a1fb-4124-af62-c7ad5b858cf1:0",
+      "targetNodeId": "b117b7a7-7da2-4211-83cd-2a4e9eeec0c3:0",
+      "targetRefType": "same-project",
+      "targetRefString": "MyTestGit:mcp-invoke-3adnq:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1785326649071,
+      "lastValidated": 1785326649071
+    }
+  ]
+}

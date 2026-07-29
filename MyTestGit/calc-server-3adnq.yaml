@@ -1,0 +1,19 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: calc-server-3adnq
+  namespace: MyTestGit
+  version: 1.0.0
+  tags: []
+  labels:
+    origin: mcp-mcp
+spec:
+  title: calc
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: MyTestGit:quota-3adnq:1.0.0
+  policy-sequence:
+    - $ref: MyTestGit:policy-sequence-3adnq:1.0.0
+  capabilities:
+    tools:
+      - $ref: MyTestGit:calc-tool-3adnq:1.0.0
